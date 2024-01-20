@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.example.simplesudokuapp";
+option java_multiple_files = true;
+
+
+message Statistics{
+  int64 FourEasy = 1;
+  int64 FourMedium = 2;
+  int64 FourHard = 3;
+  int64 NineEasy = 4;
+  int64 NineMedium = 5;
+  int64 NineHard = 6;
+}

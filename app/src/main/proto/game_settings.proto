@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.example.simplesudokuapp";
+option java_multiple_files = true;
+
+
+message GameSettings{
+  int32 boundary = 9;
+  ProtoDiff diff  = 2;
+
+  enum ProtoDiff{
+    UnKnown  = 0;
+    Easy  = 1;
+    Medium  = 2;
+    Hard  = 3;
+  }
+}
